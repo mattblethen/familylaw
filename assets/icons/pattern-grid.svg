@@ -10,6 +10,6 @@
     <path d="M760 456.5H0" stroke="#BFD0C3"/>
     <path d="M760 608.5H0" stroke="#BFD0C3"/>
   </g>
-  <circle cx="610" cy="150" r="52" fill="#D8E1D9"/>
-  <circle cx="138" cy="620" r="24" fill="#D9A07B"/>
+  <rect x="558" y="98" width="104" height="104" rx="22" fill="#D8E1D9"/>
+  <rect x="114" y="596" width="48" height="48" rx="10" fill="#D7A37F"/>
 </svg>
