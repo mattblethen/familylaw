@@ -1,5 +1,6 @@
 :root {
   --blue-900: #1c2d44;
+  --header-blue: #17263b;
   --blue-700: #2f4e6f;
   --gold-500: #c8a96a;
   --gold-400: #d8bb7a;
@@ -100,11 +101,11 @@ ul {
   z-index: 40;
   transition: box-shadow 180ms ease, border-color 180ms ease;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  background: var(--blue-900);
+  background: var(--header-blue);
 }
 
 .site-header.is-scrolled {
-  background: var(--blue-900);
+  background: var(--header-blue);
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 22px rgba(14, 20, 30, 0.18);
 }
@@ -114,22 +115,22 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  min-height: 74px;
+  min-height: 82px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  height: 52px;
-  overflow: hidden;
+  height: 64px;
+  padding-block: 2px;
 }
 
 .brand img {
-  width: 146px;
-  height: 84px;
+  width: 172px;
+  height: 96px;
   max-width: none;
-  object-fit: cover;
-  object-position: center 42%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .site-nav {
@@ -826,15 +827,16 @@ ul {
   }
 
   .header-row {
-    min-height: 62px;
+    min-height: 70px;
   }
 
   .brand {
-    height: 40px;
+    height: 52px;
+    padding-block: 1px;
   }
 
   .brand img {
-    width: 118px;
-    height: 68px;
+    width: 136px;
+    height: 76px;
   }
 }
