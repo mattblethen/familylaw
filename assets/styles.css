@@ -115,19 +115,20 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  min-height: 82px;
+  min-height: 76px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  height: 64px;
-  padding-block: 2px;
+  flex: 0 0 auto;
+  height: 54px;
+  overflow: hidden;
 }
 
 .brand img {
-  width: 172px;
-  height: 96px;
+  width: 270px;
+  height: 54px;
   max-width: none;
   object-fit: contain;
   object-position: center;
@@ -313,6 +314,8 @@ ul {
 .quick-contact-card strong {
   color: var(--blue-900);
   font-size: 1rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .section {
@@ -754,7 +757,6 @@ ul {
   .areas-grid,
   .difference-grid,
   .process-grid,
-  .quick-contact-grid,
   .testimonial-grid,
   .footer-grid,
   .image-band,
@@ -770,6 +772,10 @@ ul {
   .bio-layout,
   .contact-layout,
   .practice-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-contact-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -827,16 +833,15 @@ ul {
   }
 
   .header-row {
-    min-height: 70px;
+    min-height: 64px;
   }
 
   .brand {
-    height: 52px;
-    padding-block: 1px;
+    height: 40px;
   }
 
   .brand img {
-    width: 136px;
-    height: 76px;
+    width: 200px;
+    height: 40px;
   }
 }
