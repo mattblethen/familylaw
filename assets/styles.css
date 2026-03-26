@@ -98,12 +98,13 @@ ul {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 40;
-  transition: background-color 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-  border-bottom: 1px solid transparent;
+  transition: box-shadow 180ms ease, border-color 180ms ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--blue-900);
 }
 
 .site-header.is-scrolled {
-  background: rgba(28, 45, 68, 0.96);
+  background: var(--blue-900);
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 22px rgba(14, 20, 30, 0.18);
 }
@@ -113,12 +114,22 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  min-height: 84px;
+  min-height: 74px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  overflow: hidden;
 }
 
 .brand img {
-  width: 160px;
-  height: auto;
+  width: 146px;
+  height: 84px;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .site-nav {
@@ -212,7 +223,7 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8rem 0 11rem;
+  padding: 9rem 0 11rem;
   background:
     linear-gradient(180deg, rgba(28, 45, 68, 0.88), rgba(47, 78, 111, 0.82)),
     url("images/local-courthouse.png") center/cover no-repeat;
@@ -280,6 +291,27 @@ ul {
   justify-content: center;
   gap: 0.9rem;
   margin-top: 0.8rem;
+}
+
+.quick-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.quick-contact-card {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1.2rem 1.3rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--divider);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.quick-contact-card strong {
+  color: var(--blue-900);
+  font-size: 1rem;
 }
 
 .section {
@@ -721,6 +753,7 @@ ul {
   .areas-grid,
   .difference-grid,
   .process-grid,
+  .quick-contact-grid,
   .testimonial-grid,
   .footer-grid,
   .image-band,
@@ -764,7 +797,7 @@ ul {
   }
 
   .hero {
-    padding-top: 7rem;
+    padding-top: 6.2rem;
     padding-bottom: 9rem;
   }
 
@@ -790,5 +823,18 @@ ul {
   .section,
   .page-hero {
     padding: 4rem 0;
+  }
+
+  .header-row {
+    min-height: 62px;
+  }
+
+  .brand {
+    height: 40px;
+  }
+
+  .brand img {
+    width: 118px;
+    height: 68px;
   }
 }
